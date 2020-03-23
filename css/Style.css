@@ -1,0 +1,176 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #111;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.navbar {
+  min-height: 70px;
+}
+
+nav.bg-dark {
+  background-color: #000 !important;
+}
+
+.picHover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.picHover:hover {
+  -webkit-filter: none;
+          filter: none;
+  cursor: pointer;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 35px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 5px 15px rgba(255, 255, 255, 0.7);
+          box-shadow: 0 5px 15px rgba(255, 255, 255, 0.7);
+}
+
+.carousel-caption h5 {
+  color: #000;
+  margin: 0;
+  text-shadow: 1px 1px #000;
+}
+
+.pt-custom {
+  padding-top: 1.7rem !important;
+}
+
+.video-wrapper {
+  border: 2px #000 solid;
+  -webkit-box-shadow: -15px -15px 30px rgba(0, 0, 0, 0.7);
+          box-shadow: -15px -15px 30px rgba(0, 0, 0, 0.7);
+  padding: 1rem 3rem 3rem;
+  background: #1e0033;
+  background: linear-gradient(157deg, #1e0033 0%, #170026 25%, black 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e0033",endColorstr="#000000",GradientType=1);
+}
+
+.video-wrapper .vid-border {
+  border: 3px solid #111;
+  -webkit-box-shadow: 1px 1px 4px #fff;
+          box-shadow: 1px 1px 4px #fff;
+}
+
+div#exampleModalCenter.modal {
+  color: #000;
+}
+
+body.modal-open > :not(.modal) {
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(2px);
+}
+
+div#programs {
+  color: #000 !important;
+}
+
+div#programs .col-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div#programs .card:nth-child(1) {
+  border: 2px solid #111;
+  -webkit-box-shadow: -1px 1px 4px #fff;
+          box-shadow: -1px 1px 4px #fff;
+}
+
+div#programs .card:nth-child(2) {
+  border: 2px solid #111;
+  -webkit-box-shadow: 1px 1px 4px #fff;
+          box-shadow: 1px 1px 4px #fff;
+}
+
+div.footer-wrapper {
+  background-color: #000;
+}
+
+div.footer-wrapper .footer {
+  min-height: 120px;
+}
+
+div.media-wrapper {
+  background: #1e0033;
+  background: linear-gradient(157deg, #1e0033 0%, #170026 25%, black 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e0033",endColorstr="#000000",GradientType=1);
+  min-height: 90px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #1e0033;
+}
+
+div.media-wrapper div.media a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  margin: 0 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 3px 4px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 3px 4px rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+div.media-wrapper div.media a:hover > i {
+  -webkit-transform: scale(1.2) rotate(-25deg);
+          transform: scale(1.2) rotate(-25deg);
+  color: #fff;
+}
+
+div.media-wrapper div.media a:hover {
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+
+div.media-wrapper div.media a:nth-child(1):hover {
+  background-color: #e4405f;
+}
+
+div.media-wrapper div.media a:nth-child(2):hover {
+  background-color: #3b5999;
+}
+
+div.media-wrapper div.media a:nth-child(3):hover {
+  background-color: #cd201f;
+}
+
+div.media-wrapper div.media a:nth-child(4):hover {
+  background-color: #d68204;
+}
+/*# sourceMappingURL=Style.css.map */
