@@ -122,7 +122,6 @@ div.media-wrapper {
       text-decoration: none;
       box-shadow: 0px 3px 4px rgba(255, 255, 255, 0.5);
       transition: all 0.3s ease;
-      @media (hover: hover) {
         &:hover > i {
           transform: scale(1.2) rotate(-25deg);
           color: #fff;
@@ -142,7 +141,6 @@ div.media-wrapper {
         &:nth-child(4):hover {
           background-color: #d68204;
         }
-      }
     }
   }
 }
