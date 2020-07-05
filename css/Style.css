@@ -173,4 +173,10 @@ div.media-wrapper div.media a:nth-child(3):hover {
 div.media-wrapper div.media a:nth-child(4):hover {
   background-color: #d68204;
 }
+
+@media (hover: none) {
+  a:hover {
+    color: inherit;
+  }
+}
 /*# sourceMappingURL=Style.css.map */
