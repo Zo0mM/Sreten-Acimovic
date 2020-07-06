@@ -146,7 +146,17 @@ div.media-wrapper {
 }
 
 @media (hover: none) {
-  a:hover, a:hover > i {
+  a:hover {
     color: inherit;
+  }
+}
+
+@media (hover: none) {
+  div.media-wrapper {
+    div.media {
+      a:hover > i {
+        color: inherit;
+      }
+    }
   }
 }
