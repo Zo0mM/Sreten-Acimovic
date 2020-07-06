@@ -146,7 +146,7 @@ div.media-wrapper {
 }
 
 @media (hover: none) {
-  a:hover {
+  a:link {
     color: #fff;
   }
 }
@@ -154,7 +154,7 @@ div.media-wrapper {
 @media (hover: none) {
   div.media-wrapper {
     div.media {
-      a:hover > i {
+      a:link > i {
         color: #000;
       }
     }
@@ -164,7 +164,7 @@ div.media-wrapper {
 @media (hover: none) {
   div.media-wrapper {
     div.media {
-      a:hover {
+      a:link {
         background-color: #fff;
       }
     }
