@@ -176,13 +176,19 @@ div.media-wrapper div.media a:nth-child(4):hover {
 
 @media (hover: none) {
   a:hover {
-    color: inherit;
+    color: #fff;
   }
 }
 
 @media (hover: none) {
   div.media-wrapper div.media a:hover > i {
-    color: inherit;
+    color: #000;
+  }
+}
+
+@media (hover: none) {
+  div.media-wrapper div.media a:hover {
+    background-color: #fff;
   }
 }
 /*# sourceMappingURL=Style.css.map */
