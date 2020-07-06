@@ -91,6 +91,9 @@ div#programs {
     &:nth-child(2) {
       border: 2px solid #111;
       box-shadow: 1px 1px 4px #fff;
+      h5 span.no-wrap {
+        white-space: nowrap;
+      }
     }
   }
 }

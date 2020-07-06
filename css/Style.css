@@ -106,6 +106,10 @@ div#programs .card:nth-child(2) {
           box-shadow: 1px 1px 4px #fff;
 }
 
+div#programs .card:nth-child(2) h5 span.no-wrap {
+  white-space: nowrap;
+}
+
 div.footer-wrapper {
   background-color: #000;
 }
