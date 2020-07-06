@@ -145,26 +145,29 @@ div.media-wrapper {
   }
 }
 
-@media (hover: none) {
-  a {
+@media (hover: none),
+(hover:on-demand) {
+  a:hover {
     color: #fff;
   }
 }
 
-@media (hover: none) {
+@media (hover: none),
+(hover:on-demand) {
   div.media-wrapper {
     div.media {
-      a > i {
+      a:hover > i {
         color: #000;
       }
     }
   }
 }
 
-@media (hover: none) {
+@media (hover: none),
+(hover:on-demand) {
   div.media-wrapper {
     div.media {
-      a {
+      a:hover {
         background-color: #fff;
       }
     }

@@ -174,20 +174,20 @@ div.media-wrapper div.media a:nth-child(4):hover {
   background-color: #d68204;
 }
 
-@media (hover: none) {
-  a {
+@media (hover: none), (hover: on-demand) {
+  a:hover {
     color: #fff;
   }
 }
 
-@media (hover: none) {
-  div.media-wrapper div.media a > i {
+@media (hover: none), (hover: on-demand) {
+  div.media-wrapper div.media a:hover > i {
     color: #000;
   }
 }
 
-@media (hover: none) {
-  div.media-wrapper div.media a {
+@media (hover: none), (hover: on-demand) {
+  div.media-wrapper div.media a:hover {
     background-color: #fff;
   }
 }
