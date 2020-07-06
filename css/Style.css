@@ -175,19 +175,19 @@ div.media-wrapper div.media a:nth-child(4):hover {
 }
 
 @media (hover: none) {
-  a:link {
+  a {
     color: #fff;
   }
 }
 
 @media (hover: none) {
-  div.media-wrapper div.media a:link > i {
+  div.media-wrapper div.media a > i {
     color: #000;
   }
 }
 
 @media (hover: none) {
-  div.media-wrapper div.media a:link {
+  div.media-wrapper div.media a {
     background-color: #fff;
   }
 }
