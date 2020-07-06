@@ -125,9 +125,15 @@ div.media-wrapper {
       &:hover > i {
         transform: scale(1.2) rotate(-25deg);
         color: #fff;
+        @media (hover: none), (hover:on-demand) {
+          color: #000;
+        }
       }
       &:hover {
         transform: translate(0, -5px);
+        @media (hover: none), (hover:on-demand) {
+          transform: none;
+        }
       }
       &:nth-child(1):hover {
         background-color: #e4405f;
@@ -149,17 +155,6 @@ div.media-wrapper {
 (hover:on-demand) {
   a:hover {
     color: #fff;
-  }
-}
-
-@media (hover: none),
-(hover:on-demand) {
-  div.media-wrapper {
-    div.media {
-      a:hover > i {
-        color: #000;
-      }
-    }
   }
 }
 

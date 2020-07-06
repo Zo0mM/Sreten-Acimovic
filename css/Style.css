@@ -153,9 +153,22 @@ div.media-wrapper div.media a:hover > i {
   color: #fff;
 }
 
+@media (hover: none), (hover: on-demand) {
+  div.media-wrapper div.media a:hover > i {
+    color: #000;
+  }
+}
+
 div.media-wrapper div.media a:hover {
   -webkit-transform: translate(0, -5px);
           transform: translate(0, -5px);
+}
+
+@media (hover: none), (hover: on-demand) {
+  div.media-wrapper div.media a:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 div.media-wrapper div.media a:nth-child(1):hover {
@@ -177,12 +190,6 @@ div.media-wrapper div.media a:nth-child(4):hover {
 @media (hover: none), (hover: on-demand) {
   a:hover {
     color: #fff;
-  }
-}
-
-@media (hover: none), (hover: on-demand) {
-  div.media-wrapper div.media a:hover > i {
-    color: #000;
   }
 }
 
