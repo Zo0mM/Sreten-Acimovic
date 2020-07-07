@@ -162,19 +162,19 @@ body.hasHover div.media-wrapper div.media a:hover {
           transform: translate(0, -5px);
 }
 
-div.media-wrapper div.media a:nth-child(1):hover {
+body.hasHover div.media-wrapper div.media a:nth-child(1):hover {
   background-color: #e4405f;
 }
 
-div.media-wrapper div.media a:nth-child(2):hover {
+body.hasHover div.media-wrapper div.media a:nth-child(2):hover {
   background-color: #3b5999;
 }
 
-div.media-wrapper div.media a:nth-child(3):hover {
+body.hasHover div.media-wrapper div.media a:nth-child(3):hover {
   background-color: #cd201f;
 }
 
-div.media-wrapper div.media a:nth-child(4):hover {
+body.hasHover div.media-wrapper div.media a:nth-child(4):hover {
   background-color: #d68204;
 }
 /*# sourceMappingURL=Style.css.map */
