@@ -26,7 +26,7 @@ nav.bg-dark {
           filter: grayscale(100%);
 }
 
-.picHover:hover {
+body.hasHover .picHover:hover {
   -webkit-filter: none;
           filter: none;
   cursor: pointer;
@@ -151,28 +151,15 @@ div.media-wrapper div.media a {
   transition: all 0.3s ease;
 }
 
-div.media-wrapper div.media a:hover > i {
+body.hasHover div.media-wrapper div.media a:hover > i {
   -webkit-transform: scale(1.2) rotate(-25deg);
           transform: scale(1.2) rotate(-25deg);
   color: #fff;
 }
 
-@media (hover: none), (hover: on-demand) {
-  div.media-wrapper div.media a:hover > i {
-    color: #000;
-  }
-}
-
-div.media-wrapper div.media a:hover {
+body.hasHover div.media-wrapper div.media a:hover {
   -webkit-transform: translate(0, -5px);
           transform: translate(0, -5px);
-}
-
-@media (hover: none), (hover: on-demand) {
-  div.media-wrapper div.media a:hover {
-    -webkit-transform: none;
-            transform: none;
-  }
 }
 
 div.media-wrapper div.media a:nth-child(1):hover {
@@ -189,17 +176,5 @@ div.media-wrapper div.media a:nth-child(3):hover {
 
 div.media-wrapper div.media a:nth-child(4):hover {
   background-color: #d68204;
-}
-
-@media (hover: none), (hover: on-demand) {
-  a:hover {
-    color: #fff;
-  }
-}
-
-@media (hover: none), (hover: on-demand) {
-  div.media-wrapper div.media a:hover {
-    background-color: #fff;
-  }
 }
 /*# sourceMappingURL=Style.css.map */
