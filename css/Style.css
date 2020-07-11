@@ -177,4 +177,144 @@ body.hasHover div.media-wrapper div.media a:nth-child(3):hover {
 body.hasHover div.media-wrapper div.media a:nth-child(4):hover {
   background-color: #d68204;
 }
+
+#back-to-top-btn {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #1e0033;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+  background-color: #fff;
+  color: #1e0033;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  #back-to-top-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  #back-to-top-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+.btnEntrance {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: btnEntrance;
+          animation-name: btnEntrance;
+}
+
+/* zoomIn */
+/* @keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+} */
+/* fadeInUp */
+@-webkit-keyframes btnEntrance {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: btnExit;
+          animation-name: btnExit;
+}
+
+/* zoomOut */
+/* @keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+} */
+/* fadeOutDown */
+@-webkit-keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
 /*# sourceMappingURL=Style.css.map */
