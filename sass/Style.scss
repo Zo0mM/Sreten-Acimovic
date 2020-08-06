@@ -1,6 +1,8 @@
 @import "partials/variables";
 @import "partials/mixins";
 
+//////////   GLOBAL STYLES   //////////
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -17,6 +19,12 @@ body {
 
 .navbar {
   min-height: 70px;
+  .container {
+    a.navbar-brand {
+      font-family: "Lobster", cursive;
+      font-size: 1.5rem;
+    }
+  }
 }
 
 nav.bg-dark {
@@ -56,9 +64,12 @@ nav.bg-dark {
 
 .video-wrapper {
   border: 2px #000 solid;
-  box-shadow: -15px -15px 30px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 -5px 40px rgba(255, 255, 255, 0.7);
   padding: 1rem 3rem 3rem;
-  @include magic-color;
+  background-color: rgb(8, 8, 8);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  // @include magic-color;
   .vid-border {
     border: 3px solid #111;
     box-shadow: 1px 1px 4px #fff;
@@ -77,13 +88,50 @@ body.modal-open > :not(.modal) {
   filter: blur(2px);
 }
 
+//////////   CARDS STYLES   //////////
+
 div#programs {
   color: $secondery-text-color !important;
   .col-4 {
     padding-left: 0;
     padding-right: 0;
   }
-  .card {
+  div.card {
+    transition: all 0.3s ease-in-out;
+    h5.offer-contain,
+    ul,
+    button {
+      display: none;
+    }
+    ul li {
+      list-style: none;
+    }
+    body.hasHover &:hover {
+      @include magic-color;
+      color: #fff;
+      transform: scale(1.1);
+      img,
+      a {
+        display: none;
+      }
+      h5.offer-contain,
+      ul {
+        display: block;
+        text-align: left;
+        padding: 0;
+      }
+      button.btn {
+        display: inline-block;
+        text-align: center;
+        background-color: rgb(37, 0, 63);
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 1px #fff solid;
+        cursor: pointer;
+      }
+    }
     &:nth-child(1) {
       border: 2px solid #111;
       box-shadow: -1px 1px 4px #fff;
@@ -148,6 +196,19 @@ div.media-wrapper {
   }
 }
 
+//////////   ABOUT   //////////
+.container {
+  .row {
+    .about-page-text {
+      text-shadow: 0.5px 0 #fff;
+      h5 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
 #back-to-top-btn {
   display: none;
   justify-content: center; // When JS function make it to display as inline-flex
@@ -192,6 +253,44 @@ div.media-wrapper {
     font-size: 25px;
     bottom: 15px;
     right: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  div.bck-img {
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+    .row {
+      img.about-page-img {
+        display: none;
+      }
+      div.about-page-text {
+        margin-top: 2rem;
+        h5 {
+          text-transform: uppercase;
+          text-shadow: 0.5px 0 #fff;
+          text-align: center;
+        }
+        p {
+          margin-top: 2rem;
+          text-shadow: 0.5px 0 #fff;
+          padding: 0 20px;
+        }
+      }
+    }
+    &::before {
+      content: "";
+      background-image: url(../img/gallery3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+    }
   }
 }
 
@@ -248,4 +347,28 @@ div.media-wrapper {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: rotate(0) scale(0) translateX(0) skewX(0) skewY(0);
+    transform-origin: 0;
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(0) scale(1.2) translateX(0) translateY(20%) skewX(0)
+      skewY(0);
+    transform-origin: 0;
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(0) scale(1) translateX(0) translateY(-25) skewX(0)
+      skewY(0);
+    transform-origin: 0;
+    opacity: 1;
+  }
+}
+
+a.navbar-brand {
+  animation: logoAnimation 1s forwards 0s ease;
 }

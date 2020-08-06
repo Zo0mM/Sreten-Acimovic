@@ -51,10 +51,10 @@ function scrollFunction() {
     if (backToTopButton.classList.contains("btnEntrance")) {
       backToTopButton.classList.remove("btnEntrance");
       backToTopButton.classList.add("btnExit");
-      setTimeout(function() {
+      setTimeout(function () {
         backToTopButton.style.display = "none";
       }, 200);
-      
+
     }
   }
 }
@@ -64,3 +64,4 @@ backToTopButton.addEventListener("click", backToTop);
 function backToTop() {
   window.scrollTo(0, 0);
 }
+
