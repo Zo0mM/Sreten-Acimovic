@@ -13,6 +13,10 @@ body {
   color: #fff;
 }
 
+body {
+  padding-top: 70px !important;
+}
+
 .navbar {
   min-height: 70px;
 }
