@@ -2,7 +2,6 @@
 @import "partials/mixins";
 
 //////////   GLOBAL STYLES   //////////
-
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -21,6 +20,43 @@ body {
   padding-top: 70px !important;
 }
 
+//////////   PRELOADER STYLES   //////////
+div.loader {
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 150px;
+    height: auto;
+  }
+  h5 {
+    color: #000;
+    position: relative;
+    bottom: 45px;
+  }
+}
+
+div.loader.hidden {
+  animation: preloader 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes preloader {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+//////////   NAVIGATION   //////////
 .navbar {
   min-height: 70px;
   .container {
@@ -35,14 +71,7 @@ nav.bg-dark {
   background-color: $nav-background-color !important;
 }
 
-.picHover {
-  filter: grayscale(100%);
-  body.hasHover &:hover {
-    filter: none;
-    cursor: pointer;
-  }
-}
-
+//////////   CAROUSEL   //////////
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -62,10 +91,16 @@ nav.bg-dark {
   }
 }
 
-.pt-custom {
-  padding-top: 1.7rem !important;
+//////////   ABOUT SECTION STYLES   //////////
+.picHover {
+  filter: grayscale(100%);
+  body.hasHover &:hover {
+    filter: none;
+    cursor: pointer;
+  }
 }
 
+//////////   VIDEO SECTION STYLES   //////////
 .video-wrapper {
   border: 2px #000 solid;
   box-shadow: 0 -5px 40px rgba(255, 255, 255, 0.7);
@@ -80,20 +115,19 @@ nav.bg-dark {
   }
 }
 
-div#exampleModalCenter.modal {
-  color: $secondery-text-color;
-}
+// div#exampleModalCenter.modal {    // CHECK IF NEED TO DELETE
+//   color: $secondery-text-color;
+// }
 
-body.modal-open > :not(.modal) {
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  -o-filter: blur(1px);
-  -ms-filter: blur(1px);
-  filter: blur(2px);
-}
+// body.modal-open > :not(.modal) {
+//   -webkit-filter: blur(1px);      // CHECK IF NEED TO DELETE
+//   -moz-filter: blur(1px);
+//   -o-filter: blur(1px);
+//   -ms-filter: blur(1px);
+//   filter: blur(2px);
+// }
 
 //////////   CARDS STYLES   //////////
-
 div#programs {
   color: $secondery-text-color !important;
   .col-4 {
@@ -150,13 +184,7 @@ div#programs {
   }
 }
 
-div.footer-wrapper {
-  background-color: $footer-background-color;
-  .footer {
-    min-height: 120px;
-  }
-}
-
+//////////   MEDIA BAR STYLES   //////////
 div.media-wrapper {
   @include magic-color;
   min-height: 90px;
@@ -197,6 +225,14 @@ div.media-wrapper {
         background-color: #d68204;
       }
     }
+  }
+}
+
+//////////   FOOTER STYLES   //////////
+div.footer-wrapper {
+  background-color: $footer-background-color;
+  .footer {
+    min-height: 120px;
   }
 }
 
@@ -375,4 +411,5 @@ div.media-wrapper {
 
 a.navbar-brand {
   animation: logoAnimation 1s forwards 0s ease;
+  animation-delay: 0.3s;
 }

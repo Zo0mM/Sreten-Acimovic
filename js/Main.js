@@ -65,3 +65,10 @@ function backToTop() {
   window.scrollTo(0, 0);
 }
 
+
+
+/////////   PRELOADER   //////////
+window.addEventListener("load", function () {
+  const loader = document.querySelector(".loader");
+  loader.className += " hidden"; // class "loader hidden"
+});
