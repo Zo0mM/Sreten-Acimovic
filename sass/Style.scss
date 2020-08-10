@@ -413,3 +413,29 @@ a.navbar-brand {
   animation: logoAnimation 1s forwards 0s ease;
   animation-delay: 0.3s;
 }
+
+//////////   CONTACT PAGE STYLES   //////////
+div.container.form-bck {
+  margin-top: 5%;
+  background: linear-gradient(135deg, rgb(30, 0, 51) 20%, #000 20%);
+  i {
+    font-size: 110px;
+    transform: rotate(-43.5deg);
+  }
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .form-group input.btn {
+    display: inline-block;
+    background-color: rgb(37, 0, 63);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px #fff solid;
+    cursor: pointer;
+  }
+}
