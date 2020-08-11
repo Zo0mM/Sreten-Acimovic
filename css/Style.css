@@ -274,6 +274,10 @@ div.footer-wrapper .footer {
   min-height: 120px;
 }
 
+div.bord {
+  border-top: 1px solid #1e0033;
+}
+
 .container .row .about-page-text {
   text-shadow: 0.5px 0 #fff;
 }
@@ -519,7 +523,7 @@ div.container.form-bck {
   background: linear-gradient(135deg, #1e0033 20%, #000 20%);
 }
 
-div.container.form-bck i {
+div.container.form-bck i.letter-img {
   font-size: 110px;
   -webkit-transform: rotate(-43.5deg);
           transform: rotate(-43.5deg);
@@ -540,5 +544,56 @@ div.container.form-bck .form-group input.btn {
   text-transform: uppercase;
   border: 1px #fff solid;
   cursor: pointer;
+}
+
+div.container.form-bck div.media a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  margin: 0 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 3px 4px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 3px 4px rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body.hasHover div.container.form-bck div.media a:hover > i {
+  -webkit-transform: scale(1.2) rotate(-25deg);
+          transform: scale(1.2) rotate(-25deg);
+  color: #fff;
+}
+
+body.hasHover div.container.form-bck div.media a:hover {
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+
+body.hasHover div.container.form-bck div.media a:nth-child(1):hover {
+  background-color: #e4405f;
+}
+
+body.hasHover div.container.form-bck div.media a:nth-child(2):hover {
+  background-color: #3b5999;
+}
+
+body.hasHover div.container.form-bck div.media a:nth-child(3):hover {
+  background-color: #cd201f;
+}
+
+body.hasHover div.container.form-bck div.media a:nth-child(4):hover {
+  background-color: #d68204;
 }
 /*# sourceMappingURL=Style.css.map */
