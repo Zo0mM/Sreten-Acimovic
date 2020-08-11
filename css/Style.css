@@ -658,7 +658,5 @@ body.hasHover div.container.form-bck div.media a:nth-child(4):hover {
 div.container.form-bck {
   -webkit-animation: contactAnimation 1s forwards ease-in-out;
           animation: contactAnimation 1s forwards ease-in-out;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
 }
 /*# sourceMappingURL=Style.css.map */
