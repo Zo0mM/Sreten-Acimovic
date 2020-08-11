@@ -413,7 +413,7 @@ div.bord {
 }
 
 a.navbar-brand {
-  animation: logoAnimation 1s forwards 0s ease;
+  animation: logoAnimation 1s forwards ease;
   animation-delay: 0.3s;
 }
 
@@ -474,4 +474,33 @@ div.container.form-bck {
       background-color: #d68204;
     }
   }
+}
+
+@keyframes contactAnimation {
+  0% {
+    transform: rotate(0) scale(1) translateX(120%) translateY(0) skewX(0)
+      skewY(0);
+    transform-origin: 0;
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(0) scale(1) translateX(-30px) translateY(0) skewX(0)
+      skewY(0);
+    transform-origin: 0;
+  }
+  75% {
+    transform: rotate(0) scale(1) translateX(30px) translateY(0) skewX(0)
+      skewY(0);
+    transform-origin: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1) translateX(0) translateY(0) skewX(0) skewY(0);
+    transform-origin: 0;
+    opacity: 1;
+  }
+}
+
+div.container.form-bck {
+  animation: contactAnimation 1s forwards ease-in-out;
+  animation-delay: 0.3s;
 }
